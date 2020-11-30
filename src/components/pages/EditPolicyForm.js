@@ -63,7 +63,7 @@ export default function EditPolicyForm(props) {
             setValues({
                 ...recordForEdit
             })
-    }, [recordForEdit]);
+    }, [recordForEdit, setValues]);
 
     return (
         <Form onSubmit={handleSubmit}>
