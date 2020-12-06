@@ -65,7 +65,7 @@ export default function Policies() {
         })
     }
 
-    const addOrEdit = (policy, resetForm) => {
+    const editPolicy = (policy, resetForm) => {
         const index = policy.index;
         const edit = Object.assign(policy);
         delete edit[index];
@@ -137,7 +137,7 @@ export default function Policies() {
         >
             <EditPolicyForm
                 recordForEdit={recordForEdit}
-                addOrEdit={addOrEdit} />
+                editPolicy={editPolicy} />
         </Popup>
     </>
     );

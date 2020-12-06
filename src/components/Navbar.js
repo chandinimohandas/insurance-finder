@@ -11,7 +11,6 @@ export default function Navbar() {
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
 
-
     return (
         <>
             <IconContext.Provider value={{ color: '#fff' }}>

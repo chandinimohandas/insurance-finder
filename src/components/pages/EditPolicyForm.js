@@ -22,7 +22,7 @@ const initialFValues = {
 }
 
 export default function EditPolicyForm(props) {
-    const { addOrEdit, recordForEdit } = props
+    const { editPolicy, recordForEdit } = props
 
     const validate = (fieldValues = values) => {
         let temp = { ...errors }
@@ -54,7 +54,7 @@ export default function EditPolicyForm(props) {
     const handleSubmit = e => {
         e.preventDefault()
         if (validate()) {
-            addOrEdit(values, resetForm);
+            editPolicy(values, resetForm);
         }
     }
 
